@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>My Contacts</title>
+    <style>
+        body {
+            background-color: #ff69b4;
+            font-family: 'Courier', sans-serif;
+            color: Blue;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            color: #ff0080;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff0080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff0055;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>Contact me thru my Social Media Accounts?</h3>
+    <p><a href="https://www.facebook.com/mbninobla" target="_blank">Facebook</a>         <a href="https://www.instagram.com/aram_inside/" target="_blank">Instagram</a></p>
+    <hr>
+    <form action="mailto:ninobla.mbea@gmail.com" method="post" enctype="text/plain">
+        <label>Your Name:</label>
+        <input type="text" name="Name" value=""><br><br>
+        <label>Your Email:</label>
+        <input type="email" name="Email" value=""><br><br>
+        <label>Your Message:</label><br><br>
+        <textarea name="Message" rows="5" cols="40"></textarea><br>
+        <input type="submit" value="Send">
+    </form>
+</div>
+</body>
+</html>
